@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Set your global body text, default font, and default color */
+  body {
+    @apply font-nunito text-brand-black;
+  }
+
+  /* Set your global heading font and make them bold again */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat font-bold text-brand-black;
+  }
+}
+
+/* Custom JS State for Mobile Menu */
+body.menu-open .page-links {
+  opacity: 0.98 !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* All Skills Accordion */
+.all-skills {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.3s ease;
+}
+
+.all-skills.expanded {
+  opacity: 1;
+}
+
+@media (min-width: 1084px) {
+  .all-skills.expanded {
+    margin: 4rem 6rem;
+  }
+}

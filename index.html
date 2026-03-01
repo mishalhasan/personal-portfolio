@@ -8,10 +8,6 @@
       name="description"
       content="Learn more about Mishal Hasan's background, experience, interests, and professional journey."
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
 
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -20,16 +16,21 @@
     />
   </head>
   <body>
-    <header>
-      <nav aria-label="Main Navigation">
-        <ul class="social-links">
+    <header class="bg-brand-brown border-b border-brand-gray">
+      <nav
+        aria-label="Main Navigation"
+        class="w-full max-w-[1440px] mx-auto flex justify-between items-center text-brand-tan p-[1.5%]"
+      >
+        <ul
+          class="social-links flex justify-evenly gap-4 lg:gap-[clamp(1rem,1.5vw,1.5rem)] 2xl:gap-[clamp(1.25rem,1.5vw,1.5rem)]"
+        >
           <li>
             <a
               href="https://www.linkedin.com/in/mishal-hasan/"
               aria-label="LinkedIn profile"
             >
               <img
-                class="h-icon"
+                class="h-icon w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
                 src="resources/icons/linkedin-icon-y.svg"
                 alt="LinkedIn icon"
               />
@@ -41,56 +42,116 @@
               aria-label="Github profile"
             >
               <img
-                class="h-icon"
+                class="h-icon w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
                 src="resources/icons/github-icon-y.svg"
                 alt="GitHub icon"
               />
             </a>
           </li>
           <li>
-            <a href="/resume.pdf" aria-label="View resume">
+            <a
+              href="/resources/files/resume-full-stack-Jan-2026.pdf"
+              aria-label="View resume"
+            >
               <img
-                class="h-icon"
+                class="h-icon w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
                 src="resources/icons/resume-icon-y.svg"
                 alt="Resume icon"
               />
             </a>
           </li>
         </ul>
-        <button class="hamburger">☰</button>
-        <ul class="page-links">
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#skills-experience-section">Skills</a></li>
-          <li><a href="#projects-section">Projects</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-          <li class="back-item">
-            <button class="back-button">← Back</button>
+        <button
+          class="hamburger text-brand-tan text-[clamp(1.5rem,4vw,2rem)] md:hidden"
+        >
+          ☰
+        </button>
+        <ul
+          class="page-links flex flex-col justify-center items-center gap-[clamp(0.5rem,1.5vw,1rem)] fixed inset-0 z-50 bg-brand-brown pointer-events-none transform -translate-y-[10%] opacity-0 transition-all duration-300 ease-in-out md:flex-row md:justify-evenly md:gap-[clamp(0.75rem,1.5vw,1.5rem)] md:inset-auto md:static md:translate-y-0 md:bg-transparent md:pointer-events-auto md:opacity-100 lg:gap-[clamp(1rem,1.5vw,1.5rem)] 2xl:gap-[clamp(1.25rem,1.5vw,1.5rem)]"
+        >
+          <li>
+            <a
+              class="text-[clamp(1.5rem,4vw,2rem)] md:text-[clamp(1rem,1.2vw,1.25rem)] lg:text-[clamp(1.125rem,1.2vw,1.375rem)] 2xl:text-[clamp(1.25rem,1.2vw,1.5rem)]"
+              href="#about-section"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-[clamp(1.5rem,4vw,2rem)] md:text-[clamp(1rem,1.2vw,1.25rem)] lg:text-[clamp(1.125rem,1.2vw,1.375rem)] 2xl:text-[clamp(1.25rem,1.2vw,1.5rem)]"
+              href="#skills-experience-section"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-[clamp(1.5rem,4vw,2rem)] md:text-[clamp(1rem,1.2vw,1.25rem)] lg:text-[clamp(1.125rem,1.2vw,1.375rem)] 2xl:text-[clamp(1.25rem,1.2vw,1.5rem)]"
+              href="#projects-section"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-[clamp(1.5rem,3vw,1.5rem)] md:text-[clamp(1rem,1.2vw,1.25rem)] lg:text-[clamp(1.125rem,1.2vw,1.375rem)] 2xl:text-[clamp(1.25rem,1.2vw,1.5rem)]"
+              href="#contact-section"
+              >Contact</a
+            >
+          </li>
+          <li class="back-item pt-4 md:hidden">
+            <button
+              class="back-button text-brand-tan text-[clamp(0.8rem,1vw,1rem)] md:text-[clamp(1rem,1.2vw,1.25rem)]"
+            >
+              ← Back
+            </button>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="hero-section" class="section-header centered">
-        <div class="hero-section_container container">
-          <h1>Mishal Hasan</h1>
-          <p>
-            Full-stack developer: React, Node.js, PostgreSQL — making code,
-            design, and functionality click.
-          </p>
+      <section
+        id="hero-section"
+        class="bg-[url('resources/images/yellow-bg.png')] bg-no-repeat bg-cover min-h-screen py-[clamp(2rem,4vw,3rem)] flex items-center justify-center"
+      >
+        <div
+          class="w-full max-w-[1440px] mx-auto px-[clamp(1.5rem,4vw,3rem)] flex justify-center"
+        >
+          <div class="flex flex-col w-fit max-w-full gap-1">
+            <h1 class="text-[clamp(2.5rem,6vw,5rem)] leading-[1.1] text-left">
+              Mishal Hasan
+            </h1>
 
-          <a class="hero-bttn" href="#about-section"> Meet Me</a>
+            <p
+              class="text-[clamp(0.9rem,2vw,1.25rem)] leading-relaxed text-left"
+            >
+              Full-stack developer: React, Node.js, PostgreSQL — making code,
+              design, and functionality click.
+            </p>
+
+            <a
+              class="bg-brand-white text-brand-gray rounded-md px-5 py-2.5 shadow-lg font-semibold text-center transition-all duration-500 hover:bg-brand-gray hover:text-brand-white self-end mt-4"
+              href="#about-section"
+            >
+              Meet Me
+            </a>
+          </div>
         </div>
       </section>
-      <section id="about-section" class="section-header centered">
-        <div class="about-section_container container">
+      <section
+        id="about-section"
+        class="flex items-center justify-center min-h-screen 2xl:min-h-fit py-[clamp(2rem,4vw,3rem)] bg-brand-midyellow"
+      >
+        <div
+          class="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-[clamp(1.5rem,3vw,2rem)] px-[clamp(2rem,2%,3rem)]"
+        >
           <img
+            class="w-[70%] lg:w-[40%]"
             src="resources/images/headshot_16-9.png"
             alt="Headshot of Mishal Hasan, Full-Stack Developer"
           />
           <div class="about-content">
-            <h2>About</h2>
-            <p>
+            <h2 class="mb-[clamp(1rem,2vw,1.25rem)]">About</h2>
+            <p class="mb-4">
               I like to build full-stack web applications by thinking through
               how ideas move from interface to underlying systems and become
               reliable, usable products. I enjoy working across the stack,
@@ -106,52 +167,105 @@
           </div>
         </div>
       </section>
-      <section id="skills-experience-section" class="section-header">
-        <div class="skills-exp_container container">
-          <h2 class="skills-exp_title">Skills & Experience</h2>
+      <section
+        id="skills-experience-section"
+        class="min-h-screen 2xl:min-h-fit flex items-center py-[clamp(2rem,4vw,3rem)] bg-brand-darkyellow"
+      >
+        <div
+          class="w-full max-w-[1440px] mx-auto px-[clamp(2rem,2%,3rem)] flex flex-col gap-[clamp(1.5rem,3vw,2rem)] lg:grid lg:grid-cols-[2fr_1fr] lg:gap-8"
+        >
+          <h2 class="skills-exp_title lg:col-span-2">Skills & Experience</h2>
 
-          <!-- <div class="skills-exp-cards_wrapper"> -->
-          <div id="skills-card" class="card-1 skills-exp_card">
-            <h3>Top Skills</h3>
-            <div id="top-skills" class="top-skills-wrapper">
-              <figure class="top-skill skill-icon sk-5" id="javascript-t">
+          <div
+            id="skills-card"
+            class="card-1 skills-exp_card bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] lg:col-span-2"
+          >
+            <h3 class="text-center p-[clamp(0.5rem,1vw,1rem)]">Top Skills</h3>
+            <div
+              id="top-skills"
+              class="top-skills-wrapper flex flex-wrap justify-center gap-4 m-8"
+            >
+              <figure
+                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                id="javascript-t"
+              >
                 <img
+                  class="w-[clamp(2.25rem,8vw,3.5rem)]"
                   src="resources/icons/skills/javascript.svg"
                   alt="javascript icon"
                 />
-                <figcaption>JavaScript</figcaption>
+                <figcaption
+                  class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                >
+                  JavaScript
+                </figcaption>
               </figure>
-              <figure class="top-skill skill-icon sk-1" id="react-t">
-                <img src="resources/icons/skills/react.svg" alt="react icon" />
-                <figcaption>React</figcaption>
-              </figure>
-              <figure class="top-skill skill-icon sk-2" id="nodejs-t">
+              <figure
+                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                id="react-t"
+              >
                 <img
+                  class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                  src="resources/icons/skills/react.svg"
+                  alt="react icon"
+                />
+                <figcaption
+                  class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                >
+                  React
+                </figcaption>
+              </figure>
+              <figure
+                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                id="nodejs-t"
+              >
+                <img
+                  class="w-[clamp(2.25rem,8vw,3.5rem)]"
                   src="resources/icons/skills/nodejs.svg"
                   alt="nodejs icon"
                 />
-                <figcaption>Node.js</figcaption>
+                <figcaption
+                  class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                >
+                  Node.js
+                </figcaption>
               </figure>
-              <figure class="top-skill skill-icon sk-3" id="expressjs-t">
+              <figure
+                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                id="expressjs-t"
+              >
                 <img
+                  class="w-[clamp(2.25rem,8vw,3.5rem)]"
                   src="resources/icons/skills/express.svg"
                   alt="express.js icon"
                 />
-                <figcaption>Express.js</figcaption>
+                <figcaption
+                  class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                >
+                  Express.js
+                </figcaption>
               </figure>
-              <figure class="top-skill skill-icon sk-4" id="postgresql-t">
+              <figure
+                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                id="postgresql-t"
+              >
                 <img
+                  class="w-[clamp(2.25rem,8vw,3.5rem)]"
                   src="resources/icons/skills/postgresql.svg"
                   alt="PostgreSQL icon"
                 />
-                <figcaption>PostgreSQL</figcaption>
+                <figcaption
+                  class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                >
+                  PostgreSQL
+                </figcaption>
               </figure>
             </div>
 
-            <div class="bttn-wrapper">
+            <div class="bttn-wrapper inline-block text-center w-full">
               <button
                 id="toggle-all-skills"
-                class="view-bttn"
+                class="view-bttn bg-brand-white text-brand-gray font-semibold rounded-md py-2.5 px-5 mx-auto block w-fit my-4 transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                 aria-expanded="false"
                 aria-controls="all-skills"
               >
@@ -159,212 +273,454 @@
               </button>
             </div>
 
-            <div class="grid-container all-skills" id="all-skills">
-              <div class="category r1 col1" id="frontend">
+            <div
+              class="grid-container all-skills grid grid-cols-1 gap-y-4"
+              id="all-skills"
+            >
+              <div
+                class="category r1 col1 border-b border-black/30 pb-[0.2rem]"
+                id="frontend"
+              >
                 <h4>Frontend</h4>
               </div>
-              <div class="skills-row r1 col2">
-                <figure class="skill-icon" id="html">
-                  <img src="resources/icons/skills/html5.svg" alt="HTML icon" />
-                  <figcaption class="skill-caption">HTML</figcaption>
-                </figure>
-
-                <figure class="skill-icon" id="css">
-                  <img src="resources/icons/skills/css3.svg" alt="CSS icon" />
-                  <figcaption class="skill-caption">CSS</figcaption>
-                </figure>
-
-                <figure class="skill-icon" id="javascript">
+              <div
+                class="skills-row r1 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+              >
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="html"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                    src="resources/icons/skills/html5.svg"
+                    alt="HTML icon"
+                  />
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    HTML
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="css"
+                >
+                  <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                    src="resources/icons/skills/css3.svg"
+                    alt="CSS icon"
+                  />
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    CSS
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="javascript"
+                >
+                  <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/javascript.svg"
                     alt="JavaScript icon"
                   />
-                  <figcaption class="skill-caption">JavaScript</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    JavaScript
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="react">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="react"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/react.svg"
                     alt="React icon"
                   />
-                  <figcaption class="skill-caption">React</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    React
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="nextjs">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="nextjs"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/nextjs.svg"
                     alt="Next.js icon"
                   />
-                  <figcaption class="skill-caption">Next.js</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Next.js
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="tailwindcss">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="tailwindcss"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/tailwind.svg"
                     alt="Tailwind CSS icon"
                   />
-                  <figcaption class="skill-caption">Tailwind CSS</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Tailwind CSS
+                  </figcaption>
                 </figure>
               </div>
-              <div class="category r2 col1" id="backend">
+              <div
+                class="category r2 col1 border-b border-black/30 pb-[0.2rem]"
+                id="backend"
+              >
                 <h4>Backend</h4>
               </div>
-              <div class="skills-row r2 col2">
-                <figure class="skill-icon" id="sql">
-                  <img src="resources/icons/skills/sql.svg" alt="SQL icon" />
-                  <figcaption class="skill-caption">SQL</figcaption>
+              <div
+                class="skills-row r2 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+              >
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="sql"
+                >
+                  <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                    src="resources/icons/skills/sql.svg"
+                    alt="SQL icon"
+                  />
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    SQL
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="postgresql">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="postgresql"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/postgresql.svg"
                     alt="PostgreSQL icon"
                   />
-                  <figcaption class="skill-caption">PostgreSQL</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    PostgreSQL
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="mysql">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="mysql"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/mysql.svg"
                     alt="MySQL icon"
                   />
-                  <figcaption class="skill-caption">MySQL</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    MySQL
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="nodejs">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="nodejs"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/nodejs.svg"
                     alt="Node.js icon"
                   />
-                  <figcaption class="skill-caption">Node.js</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Node.js
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="express">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="express"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/express.svg"
                     alt="Express icon"
                   />
-                  <figcaption class="skill-caption">Express</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Express
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="java">
-                  <img src="resources/icons/skills/java.svg" alt="Java icon" />
-                  <figcaption class="skill-caption">Java</figcaption>
-                </figure>
-
-                <figure class="skill-icon" id="python">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="java"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                    src="resources/icons/skills/java.svg"
+                    alt="Java icon"
+                  />
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Java
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="python"
+                >
+                  <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/python.svg"
                     alt="Python icon"
                   />
-                  <figcaption class="skill-caption">Python</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Python
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="php">
-                  <img src="resources/icons/skills/php.svg" alt="PHP icon" />
-                  <figcaption class="skill-caption">PHP</figcaption>
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="php"
+                >
+                  <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                    src="resources/icons/skills/php.svg"
+                    alt="PHP icon"
+                  />
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    PHP
+                  </figcaption>
                 </figure>
               </div>
-              <div class="category r3 col1" id="devops"><h4>DevOps</h4></div>
-              <div class="skills-row r3 col2">
-                <figure class="skill-icon" id="git">
-                  <img src="resources/icons/skills/git.svg" alt="Git icon" />
-                  <figcaption class="skill-caption">Git</figcaption>
+              <div
+                class="category r3 col1 border-b border-black/30 pb-[0.2rem]"
+                id="devops"
+              >
+                <h4>DevOps</h4>
+              </div>
+              <div
+                class="skills-row r3 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+              >
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="git"
+                >
+                  <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
+                    src="resources/icons/skills/git.svg"
+                    alt="Git icon"
+                  />
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Git
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="docker">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="docker"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/docker.svg"
                     alt="Docker icon"
                   />
-                  <figcaption class="skill-caption">Docker</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Docker
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="postman">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="postman"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/postman.svg"
                     alt="Postman icon"
                   />
-                  <figcaption class="skill-caption">Postman</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Postman
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="vercel">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="vercel"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/vercel.svg"
                     alt="Vercel icon"
                   />
-                  <figcaption class="skill-caption">Vercel</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Vercel
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="railway">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="railway"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/railway.svg"
                     alt="Railway icon"
                   />
-                  <figcaption class="skill-caption">Railway</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Railway
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="digitalocean">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="digitalocean"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/digital-ocean.svg"
                     alt="DigitalOcean icon"
                   />
-                  <figcaption class="skill-caption">DigitalOcean</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    DigitalOcean
+                  </figcaption>
                 </figure>
               </div>
-              <div class="category r4 col1" id="ux-ui"><h4>UX/UI</h4></div>
-              <div class="skills-row r4 col2">
-                <figure class="skill-icon" id="adobexd">
+              <div
+                class="category r4 col1 border-b border-black/30 pb-[0.2rem]"
+                id="ux-ui"
+              >
+                <h4>UX/UI</h4>
+              </div>
+              <div
+                class="skills-row r4 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+              >
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="adobexd"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/adobe-xd.svg"
                     alt="Adobe XD icon"
                   />
-                  <figcaption class="skill-caption">Adobe XD</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Adobe XD
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="photoshop">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="photoshop"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/photoshop.svg"
                     alt="Photoshop icon"
                   />
-                  <figcaption class="skill-caption">Photoshop</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Photoshop
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="illustrator">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="illustrator"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/illustrator.svg"
                     alt="Illustrator icon"
                   />
-                  <figcaption class="skill-caption">Illustrator</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    Illustrator
+                  </figcaption>
                 </figure>
 
-                <figure class="skill-icon" id="wordpress">
+                <figure
+                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  id="wordpress"
+                >
                   <img
+                    class="w-[clamp(2.25rem,8vw,3.5rem)]"
                     src="resources/icons/skills/wordpress.svg"
                     alt="WordPress icon"
                   />
-                  <figcaption class="skill-caption">WordPress</figcaption>
+                  <figcaption
+                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                  >
+                    WordPress
+                  </figcaption>
                 </figure>
               </div>
             </div>
           </div>
-          <div id="work-expirience" class="card-2 skills-exp_card">
-            <h3>Industry Experience</h3>
-            <div class="exp-point" id="exp-1">
+          <div
+            id="work-expirience"
+            class="card-2 skills-exp_card bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] flex flex-col gap-4 lg:col-span-1"
+          >
+            <h3 class="text-center p-[clamp(0.5rem,1vw,1rem)]">
+              Industry Experience
+            </h3>
+            <div class="exp-point flex flex-col gap-1" id="exp-1">
               <h4>Platform & UI/UX Engineering</h4>
               <p>
                 Contributed to web platform enhancements and UI/UX improvements
                 for an academic institution.
               </p>
             </div>
-            <div class="exp-point" id="exp-2">
+            <div class="exp-point flex flex-col gap-1" id="exp-2">
               <h4>Systems & Database Integration</h4>
               <p>
                 Designed full-stack solutions and RESTful APIs to support
                 scalable business systems and data management.
               </p>
             </div>
-            <div class="exp-point" id="exp-3">
+            <div class="exp-point flex flex-col gap-1" id="exp-3">
               <h4>Internal Tools & Process Automation</h4>
               <p>
                 Enhanced service delivery through process automation and
@@ -372,43 +728,56 @@
               </p>
             </div>
           </div>
-          <div id="credentials" class="card-3 skills-exp_card">
-            <h3>Credentials</h3>
+          <div
+            id="credentials"
+            class="card-3 skills-exp_card bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] flex flex-col gap-4 lg:col-span-1"
+          >
+            <h3 class="text-center p-[clamp(0.5rem,1vw,1rem)]">Credentials</h3>
 
-            <div id="cred-1" class="cred-point">
-              <span class="status-label in-progress"> In Progress </span>
+            <div id="cred-1" class="cred-point flex flex-col gap-1">
+              <span
+                class="status-label in-progress block w-fit text-[0.65rem] font-semibold tracking-[1px] uppercase leading-none mb-1 border rounded px-2 py-1 bg-brand-tan text-brand-brown shadow-[0_2px_6px_rgba(146,129,122,0.15)] border-brand-gray/60"
+              >
+                In Progress
+              </span>
               <h4>Full-Stack Development Bootcamp</h4>
-              <p>Codecademy</p>
+              <p class="text-brand-gray">Codecademy</p>
             </div>
 
-            <div id="cred-2" class="cred-point">
-              <span class="status-label winner"> Capstone Winner </span>
+            <div id="cred-2" class="cred-point flex flex-col gap-1">
+              <span
+                class="status-label winner block w-fit text-[0.65rem] font-semibold tracking-[1px] uppercase leading-none mb-1 border rounded px-2 py-1 bg-brand-brown text-brand-card1 shadow-md border-transparent"
+              >
+                Capstone Winner
+              </span>
               <h4>AI Maker Bootcamp</h4>
-              <p>Codecademy</p>
+              <p class="text-brand-gray">Codecademy</p>
             </div>
 
-            <div id="cred-3" class="cred-point">
-              <!-- <span class="status-label completed"> Completed </span> -->
+            <div id="cred-3" class="cred-point flex flex-col gap-1">
               <h4>B.Sc. in Computer Science</h4>
-              <p>University of British Columbia</p>
+              <p class="text-brand-gray">University of British Columbia</p>
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </section>
 
-      <section id="projects-section" class="section-header">
-        <div class="projects-section_container container">
-          <h2>Projects</h2>
+      <section
+        id="projects-section"
+        class="flex items-center min-h-screen 2xl:min-h-fit py-[clamp(2rem,4vw,3rem)] bg-brand-midyellow"
+      >
+        <div
+          id="projects-section_container"
+          class="min-h-screen 2xl:min-h-fit w-full max-w-[1440px] mx-auto px-[clamp(2rem,2%,3rem)]"
+        >
+          <h2 class="mb-[clamp(1.5rem,3vw,2rem)]">Projects</h2>
 
-          <div class="projects-wrapper">
-            <article class="project-card card">
-              <div class="project-image">
-                <!-- <img
-                  src="resources/images/project-cards/Eira-proj.png"
-                  alt="Eira Project website screenshot"
-                /> -->
-
+          <div id="projects-wrapper" class="grid gap-[clamp(1.5rem,3vw,2rem)]">
+            <article
+              id="project-card-1"
+              class="bg-brand-card2 p-[clamp(0.75rem,2vw,1.5rem)] rounded-lg shadow-md md:flex md:flex-col lg:grid lg:grid-cols-[1fr_2fr] lg:gap-8"
+            >
+              <div id="project-image-1" class="mb-4 lg:mb-0">
                 <picture>
                   <source
                     media="(min-width: 1085px)"
@@ -418,17 +787,21 @@
                   <img
                     src="resources/images/project-cards/Eira-proj.png"
                     alt="Eira Project website screenshot"
-                    class="project-img"
+                    class="md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
                   />
                 </picture>
               </div>
 
-              <div class="project-info">
-                <h3>
-                  Eira — Personal Health Companion <span>(In Progress)</span>
+              <div class="project-info flex flex-col h-full">
+                <h3 class="my-[clamp(1rem,2vw,1.25rem)]">
+                  Eira — Personal Health Companion
+                  <span
+                    class="italic text-[clamp(0.75rem,1.2vw,0.875rem)] font-normal text-brand-gray block md:inline md:ml-2"
+                    >(In Progress)</span
+                  >
                 </h3>
 
-                <p>
+                <p class="mb-4">
                   An AI-assisted health journaling app that converts natural,
                   chat-based messages into structured entries, helping users
                   identify health patterns through a simple, intentional
@@ -441,8 +814,8 @@
                   generated from user conversations.
                 </p>
 
-                <h4>Tech Stack</h4>
-                <ul class="tech-list">
+                <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
+                <ul id="tech-list-1" class="list-disc pl-6 space-y-1.5">
                   <li>Next.js</li>
                   <li>TypeScript</li>
                   <li>Tailwind CSS</li>
@@ -450,81 +823,19 @@
                   <li>Prisma</li>
                   <li>Clerk</li>
                 </ul>
-
-                <div class="project-links">
+                <div
+                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                >
                   <a
-                    class="bttn live-bttn"
+                    class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                     href="https://eira-phi.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
-                  <a
-                    class="bttn github-bttn"
-                    href="https://github.com/mishalhasan/eira"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Code
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-image">
-                <!-- <img
-                  src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
-                  alt="Coming Soon - Project Placeholder"
-                /> -->
-
-                <picture>
-                  <source
-                    media="(min-width: 1085px)"
-                    srcset="
-                      https://dummyimage.com/720x720/cccccc/fff2d7&text=Coming+Soon
-                    "
-                  />
-                  <img
-                    src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
-                    alt="Coming Soon - Project Placeholder"
-                    class="project-img"
-                  />
-                </picture>
-              </div>
-              <div class="project-info">
-                <h3>
-                  Personal Portfolio
-                  <span>(Completed)</span>
-                </h3>
-                <p>
-                  A responsive layout project built using CSS and Tailwind CSS,
-                  incorporating advanced utility classes, pseudo-elements, and
-                  wireframe-based design principles.
-                </p>
-                <p>
-                  Created adaptive layouts with reusable components and
-                  consistent styling to ensure cross-device functionality.
-                </p>
-                <h4>Tech Stack</h4>
-                <ul class="tech-list">
-                  <li>CSS3</li>
-                  <li>HTML5</li>
-                  <li>Tailwind CSS</li>
-                </ul>
-
-                <div class="project-links">
-                  <a
-                    class="bttn live-bttn"
-                    href="https://your-live-demo-link.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
                   >
                   <a
-                    class="bttn github-bttn"
-                    href="https://github.com/your-github-link"
+                    class="bg-brand-tan text-brand-gray rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
+                    href="https://github.com/mishalhasan/eira"
                     target="_blank"
                     rel="noopener noreferrer"
                     >View Code</a
@@ -533,13 +844,78 @@
               </div>
             </article>
 
-            <article class="project-card">
-              <div class="project-image">
-                <!-- <img
-                  src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
-                  alt="Coming Soon - Project Placeholder"
-                /> -->
+            <article
+              id="project-card-2"
+              class="bg-brand-card2 p-[clamp(0.75rem,2vw,1.5rem)] rounded-lg shadow-md md:flex md:flex-col lg:grid lg:grid-cols-[1fr_2fr] lg:gap-8"
+            >
+              <div id="project-image-2" class="mb-4 lg:mb-0">
+                <picture>
+                  <source
+                    media="(min-width: 1085px)"
+                    srcset="
+                      resources/images/project-cards/Portfolio-proj-square.png
+                    "
+                  />
+                  <img
+                    src="resources/images/project-cards/Portfolio-proj.png"
+                    alt="Coming Soon - Project Placeholder"
+                    class="md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
+                  />
+                </picture>
+              </div>
+              <div id="project-info" class="flex flex-col h-full">
+                <h3 class="my-[clamp(1rem,2vw,1.25rem)]">
+                  Personal Portfolio
+                  <span
+                    class="italic text-[clamp(0.75rem,1.2vw,0.875rem)] font-normal text-brand-gray block md:inline md:ml-2"
+                    >(Completed)</span
+                  >
+                </h3>
+                <p class="mb-4">
+                  A modern, fully responsive personal portfolio built with
+                  wireframe-based layouts and fluid spacing, providing a clean,
+                  adaptable interface to showcase projects and skills.
+                </p>
+                <p>
+                  Initially built with CSS, the site was refactored into
+                  Tailwind, creating a precise, adaptable layout design that
+                  demonstrates scalable frontend architecture and delivers a
+                  seamless, cross-device experience.
+                </p>
+                <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
+                <ul id="tech-list-2" class="list-disc pl-6 space-y-1.5">
+                  <li>CSS3</li>
+                  <li>HTML5</li>
+                  <li>Tailwind CSS</li>
+                  <li>JavaScript</li>
+                </ul>
 
+                <div
+                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                >
+                  <a
+                    class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="bg-brand-tan text-brand-gray rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              id="project-card-3"
+              class="bg-brand-card2 p-[clamp(0.75rem,2vw,1.5rem)] rounded-lg shadow-md md:flex md:flex-col lg:grid lg:grid-cols-[1fr_2fr] lg:gap-8"
+            >
+              <div id="project-image-3" class="mb-4 lg:mb-0">
                 <picture>
                   <source
                     media="(min-width: 1085px)"
@@ -550,16 +926,19 @@
                   <img
                     src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
                     alt="Coming Soon - Project Placeholder"
-                    class="project-img"
+                    class="project-img md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
                   />
                 </picture>
               </div>
-              <div class="project-info">
-                <h3>
+              <div id="project-info-3" class="flex flex-col h-full">
+                <h3 class="my-[clamp(1rem,2vw,1.25rem)]">
                   Vanilla JS API Integration
-                  <span>(Planned)</span>
+                  <span
+                    class="italic text-[clamp(0.75rem,1.2vw,0.875rem)] font-normal text-brand-gray block md:inline md:ml-2"
+                    >(Planned)</span
+                  >
                 </h3>
-                <p>
+                <p class="mb-4">
                   Integrate multiple public APIs using fetch, async/await, and
                   promises to build a web application with real-time data
                   retrieval and error handling.
@@ -568,23 +947,25 @@
                   Focus on dynamic UI updates, data transformation, and API
                   authentication for seamless user interactions.
                 </p>
-                <h4>Tech Stack</h4>
-                <ul class="tech-list">
+                <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
+                <ul id="tech-list-3" class="list-disc pl-6 space-y-1.5">
                   <li>JavaScript</li>
                   <li>Fetch API</li>
                   <li>Async/Await</li>
                   <li>Postman</li>
                 </ul>
-                <div class="project-links">
+                <div
+                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                >
                   <a
-                    class="bttn live-bttn"
+                    class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
                   >
                   <a
-                    class="bttn github-bttn"
+                    class="bg-brand-tan text-brand-gray rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -594,14 +975,11 @@
               </div>
             </article>
 
-            <article class="project-card">
-              <div class="project-image">
-                <!-- <img
-                  src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
-                  alt="Coming Soon - Project Placeholder"
-                  class=""
-                /> -->
-
+            <article
+              id="project-card-4"
+              class="bg-brand-card2 p-[clamp(0.75rem,2vw,1.5rem)] rounded-lg shadow-md md:flex md:flex-col lg:grid lg:grid-cols-[1fr_2fr] lg:gap-8"
+            >
+              <div id="project-image-4" class="mb-4 lg:mb-0">
                 <picture>
                   <source
                     media="(min-width: 1085px)"
@@ -612,16 +990,19 @@
                   <img
                     src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
                     alt="Coming Soon - Project Placeholder"
-                    class="project-img"
+                    class="project-img md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
                   />
                 </picture>
               </div>
-              <div class="project-info">
-                <h3>
+              <div id="project-info-4" class="flex flex-col h-full">
+                <h3 class="my-[clamp(1rem,2vw,1.25rem)]">
                   React App with Routing & Hooks
-                  <span>(Planned)</span>
+                  <span
+                    class="italic text-[clamp(0.75rem,1.2vw,0.875rem)] font-normal text-brand-gray block md:inline md:ml-2"
+                    >(Planned)</span
+                  >
                 </h3>
-                <p>
+                <p class="mb-4">
                   Build a routed React application utilizing useEffect, custom
                   hooks, context, and React Router to manage navigation and
                   dynamic content.
@@ -631,24 +1012,26 @@
                   lifecycle handling, and side effects for a complete
                   interactive experience.
                 </p>
-                <h4>Tech Stack</h4>
-                <ul class="tech-list">
+                <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
+                <ul id="tech-list-4" class="list-disc pl-6 space-y-1.5">
                   <li>React</li>
                   <li>React Router</li>
                   <li>Tailwind CSS</li>
                   <li>JavaScript</li>
                 </ul>
 
-                <div class="project-links">
+                <div
+                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                >
                   <a
-                    class="bttn live-bttn"
+                    class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
                   >
                   <a
-                    class="bttn github-bttn"
+                    class="bg-brand-tan text-brand-gray rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -661,35 +1044,61 @@
         </div>
       </section>
 
-      <section id="contact-section" class="section-header">
-        <!-- <section id="contact-section" class="section-header centered"> -->
-        <div class="contact-section_container container">
-          <div class="contact-card card">
-            <h2>Let's Connect.</h2>
-            <h3>
+      <section
+        id="contact-section"
+        class="min-h-screen flex flex-col pt-[clamp(2rem,4vw,3rem)] bg-brand-yellow"
+      >
+        <div
+          class="flex-1 flex items-center w-full max-w-[1440px] mx-auto px-[clamp(2rem,2%,3rem)]"
+        >
+          <div class="contact-card p-[clamp(1rem,2vw,1.5rem)]">
+            <h2
+              class="text-[clamp(2rem,6vw,4rem)] md:text-[clamp(3rem,6vw,6rem)] leading-[1.1] mb-[clamp(1.5rem,3vw,2rem)] md:mb-[clamp(2.5rem,4vw,3rem)]"
+            >
+              Let's Connect.
+            </h2>
+
+            <h3
+              class="text-[clamp(1rem,1.2vw,1.25rem)] md:text-[clamp(1.1rem,1.5vw,1.35rem)] lg:text-[clamp(1.35rem,1.2vw,1.6rem)] leading-[1.4] mt-1"
+            >
               email:
-              <a href="mailto:mishalhasan2198@gmail.com">
+              <a
+                href="mailto:mishalhasan2198@gmail.com"
+                class="text-brand-brown underline transition-colors duration-300 hover:text-[#eedc9a]"
+              >
                 mishalhasan2198@gmail.com
               </a>
             </h3>
-            <h3>
-              <a href="https://www.linkedin.com/in/mishal-hasan/"> LinkedIn</a>
+
+            <h3
+              class="text-[clamp(1rem,1.2vw,1.25rem)] md:text-[clamp(1.1rem,1.5vw,1.35rem)] lg:text-[clamp(1.35rem,1.2vw,1.6rem)] leading-[1.4] mt-1"
+            >
+              <a
+                href="https://www.linkedin.com/in/mishal-hasan/"
+                class="text-brand-brown underline transition-colors duration-300 hover:text-[#eedc9a]"
+              >
+                LinkedIn
+              </a>
               /
-              <a href="https://github.com/mishalhasan/"> Github </a>
+              <a
+                href="https://github.com/mishalhasan/"
+                class="text-brand-brown underline transition-colors duration-300 hover:text-[#eedc9a]"
+              >
+                Github
+              </a>
             </h3>
           </div>
         </div>
-        <footer>
-          <p>&copy; 2026 Mishal Hasan. All rights reserved.</p>
+
+        <footer
+          class="w-full bg-brand-brown p-[clamp(0.8rem,1.5vw,1rem)] text-center"
+        >
+          <p class="text-[#faf1cf] text-[clamp(0.9rem,2vw,1rem)] m-0">
+            &copy; 2026 Mishal Hasan. All rights reserved.
+          </p>
         </footer>
       </section>
     </main>
-
-    <!-- <footer>
-      <div class="footer_container container">
-        <p>&copy; 2026 Mishal Hasan. All rights reserved.</p>
-      </div>
-    </footer> -->
 
     <script>
       // Mobile menu control

@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-tailwind",
+  "version": "1.0.0",
+  "description": "A responsive personal portfolio website built with **Tailwind CSS** to showcase my projects, skills, and experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishalhasan/personal-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mishalhasan/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/mishalhasan/personal-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
