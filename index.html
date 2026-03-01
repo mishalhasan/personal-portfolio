@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mishal Hasan Biography</title>
+    <title>Mishal Hasan Personal Portfolio</title>
     <meta
       name="description"
       content="Learn more about Mishal Hasan's background, experience, interests, and professional journey."
@@ -22,7 +22,8 @@
         class="w-full max-w-[1440px] mx-auto flex justify-between items-center text-brand-tan p-[1.5%]"
       >
         <ul
-          class="social-links flex justify-evenly gap-4 lg:gap-[clamp(1rem,1.5vw,1.5rem)] 2xl:gap-[clamp(1.25rem,1.5vw,1.5rem)]"
+          id="social-links"
+          class="flex justify-evenly gap-4 lg:gap-[clamp(1rem,1.5vw,1.5rem)] 2xl:gap-[clamp(1.25rem,1.5vw,1.5rem)]"
         >
           <li>
             <a
@@ -30,7 +31,7 @@
               aria-label="LinkedIn profile"
             >
               <img
-                class="h-icon w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
+                class="w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
                 src="resources/icons/linkedin-icon-y.svg"
                 alt="LinkedIn icon"
               />
@@ -42,7 +43,7 @@
               aria-label="Github profile"
             >
               <img
-                class="h-icon w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
+                class="w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
                 src="resources/icons/github-icon-y.svg"
                 alt="GitHub icon"
               />
@@ -54,7 +55,7 @@
               aria-label="View resume"
             >
               <img
-                class="h-icon w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
+                class="w-[clamp(1.5rem,2.5vw,2.25rem)] h-[clamp(1.5rem,2.5vw,2.25rem)]"
                 src="resources/icons/resume-icon-y.svg"
                 alt="Resume icon"
               />
@@ -67,6 +68,7 @@
           ☰
         </button>
         <ul
+          id="nav-page-links"
           class="page-links flex flex-col justify-center items-center gap-[clamp(0.5rem,1.5vw,1rem)] fixed inset-0 z-50 bg-brand-brown pointer-events-none transform -translate-y-[10%] opacity-0 transition-all duration-300 ease-in-out md:flex-row md:justify-evenly md:gap-[clamp(0.75rem,1.5vw,1.5rem)] md:inset-auto md:static md:translate-y-0 md:bg-transparent md:pointer-events-auto md:opacity-100 lg:gap-[clamp(1rem,1.5vw,1.5rem)] 2xl:gap-[clamp(1.25rem,1.5vw,1.5rem)]"
         >
           <li>
@@ -97,7 +99,7 @@
               >Contact</a
             >
           </li>
-          <li class="back-item pt-4 md:hidden">
+          <li id="mobile-back-item" class="pt-4 md:hidden">
             <button
               class="back-button text-brand-tan text-[clamp(0.8rem,1vw,1rem)] md:text-[clamp(1rem,1.2vw,1.25rem)]"
             >
@@ -114,9 +116,10 @@
         class="bg-[url('resources/images/yellow-bg.png')] bg-no-repeat bg-cover min-h-screen py-[clamp(2rem,4vw,3rem)] flex items-center justify-center"
       >
         <div
+          id="hero-container"
           class="w-full max-w-[1440px] mx-auto px-[clamp(1.5rem,4vw,3rem)] flex justify-center"
         >
-          <div class="flex flex-col w-fit max-w-full gap-1">
+          <div id="hero-content" class="flex flex-col w-fit max-w-full gap-1">
             <h1 class="text-[clamp(2.5rem,6vw,5rem)] leading-[1.1] text-left">
               Mishal Hasan
             </h1>
@@ -142,6 +145,7 @@
         class="flex items-center justify-center min-h-screen 2xl:min-h-fit py-[clamp(2rem,4vw,3rem)] bg-brand-midyellow"
       >
         <div
+          id="about-container"
           class="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-[clamp(1.5rem,3vw,2rem)] px-[clamp(2rem,2%,3rem)]"
         >
           <img
@@ -149,7 +153,7 @@
             src="resources/images/headshot_16-9.png"
             alt="Headshot of Mishal Hasan, Full-Stack Developer"
           />
-          <div class="about-content">
+          <div id="about-content">
             <h2 class="mb-[clamp(1rem,2vw,1.25rem)]">About</h2>
             <p class="mb-4">
               I like to build full-stack web applications by thinking through
@@ -172,21 +176,22 @@
         class="min-h-screen 2xl:min-h-fit flex items-center py-[clamp(2rem,4vw,3rem)] bg-brand-darkyellow"
       >
         <div
+          id="skills-exp-container"
           class="w-full max-w-[1440px] mx-auto px-[clamp(2rem,2%,3rem)] flex flex-col gap-[clamp(1.5rem,3vw,2rem)] lg:grid lg:grid-cols-[2fr_1fr] lg:gap-8"
         >
-          <h2 class="skills-exp_title lg:col-span-2">Skills & Experience</h2>
+          <h2 class="lg:col-span-2">Skills & Experience</h2>
 
           <div
             id="skills-card"
-            class="card-1 skills-exp_card bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] lg:col-span-2"
+            class="bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] lg:col-span-2"
           >
             <h3 class="text-center p-[clamp(0.5rem,1vw,1rem)]">Top Skills</h3>
             <div
               id="top-skills"
-              class="top-skills-wrapper flex flex-wrap justify-center gap-4 m-8"
+              class="flex flex-wrap justify-center gap-4 m-8"
             >
               <figure
-                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                class="border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
                 id="javascript-t"
               >
                 <img
@@ -201,7 +206,7 @@
                 </figcaption>
               </figure>
               <figure
-                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                class="border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
                 id="react-t"
               >
                 <img
@@ -216,7 +221,7 @@
                 </figcaption>
               </figure>
               <figure
-                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                class="border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
                 id="nodejs-t"
               >
                 <img
@@ -231,7 +236,7 @@
                 </figcaption>
               </figure>
               <figure
-                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                class="border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
                 id="expressjs-t"
               >
                 <img
@@ -246,7 +251,7 @@
                 </figcaption>
               </figure>
               <figure
-                class="top-skill skill-icon sk-5 border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
+                class="border-2 border-brand-gray rounded-xl transition-transform duration-300 hover:-translate-y-[10px] flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.56rem] max-w-[8.44rem] md:min-w-[7rem] md:max-w-[9rem] lg:min-w-[7.5rem] lg:max-w-[10rem] cursor-pointer"
                 id="postgresql-t"
               >
                 <img
@@ -262,10 +267,13 @@
               </figure>
             </div>
 
-            <div class="bttn-wrapper inline-block text-center w-full">
+            <div
+              id="skills-btn-wrapper"
+              class="inline-block text-center w-full"
+            >
               <button
                 id="toggle-all-skills"
-                class="view-bttn bg-brand-white text-brand-gray font-semibold rounded-md py-2.5 px-5 mx-auto block w-fit my-4 transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
+                class="bg-brand-white text-brand-gray font-semibold rounded-md py-2.5 px-5 mx-auto block w-fit my-4 transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
                 aria-expanded="false"
                 aria-controls="all-skills"
               >
@@ -273,21 +281,16 @@
               </button>
             </div>
 
-            <div
-              class="grid-container all-skills grid grid-cols-1 gap-y-4"
-              id="all-skills"
-            >
-              <div
-                class="category r1 col1 border-b border-black/30 pb-[0.2rem]"
-                id="frontend"
-              >
+            <div class="all-skills grid grid-cols-1 gap-y-4" id="all-skills">
+              <div class="border-b border-black/30 pb-[0.2rem]" id="frontend">
                 <h4>Frontend</h4>
               </div>
               <div
-                class="skills-row r1 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+                id="frontend-skills-row"
+                class="grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
               >
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="html"
                 >
                   <img
@@ -296,14 +299,14 @@
                     alt="HTML icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     HTML
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="css"
                 >
                   <img
@@ -312,14 +315,14 @@
                     alt="CSS icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     CSS
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="javascript"
                 >
                   <img
@@ -328,14 +331,14 @@
                     alt="JavaScript icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     JavaScript
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="react"
                 >
                   <img
@@ -344,14 +347,14 @@
                     alt="React icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     React
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="nextjs"
                 >
                   <img
@@ -360,14 +363,14 @@
                     alt="Next.js icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Next.js
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="tailwindcss"
                 >
                   <img
@@ -376,23 +379,21 @@
                     alt="Tailwind CSS icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Tailwind CSS
                   </figcaption>
                 </figure>
               </div>
-              <div
-                class="category r2 col1 border-b border-black/30 pb-[0.2rem]"
-                id="backend"
-              >
+              <div class="border-b border-black/30 pb-[0.2rem]" id="backend">
                 <h4>Backend</h4>
               </div>
               <div
-                class="skills-row r2 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+                id="backend-skills-row"
+                class="grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
               >
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="sql"
                 >
                   <img
@@ -401,14 +402,14 @@
                     alt="SQL icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     SQL
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="postgresql"
                 >
                   <img
@@ -417,14 +418,14 @@
                     alt="PostgreSQL icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     PostgreSQL
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="mysql"
                 >
                   <img
@@ -433,14 +434,14 @@
                     alt="MySQL icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     MySQL
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="nodejs"
                 >
                   <img
@@ -449,14 +450,14 @@
                     alt="Node.js icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Node.js
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="express"
                 >
                   <img
@@ -465,14 +466,14 @@
                     alt="Express icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Express
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="java"
                 >
                   <img
@@ -481,14 +482,14 @@
                     alt="Java icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Java
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="python"
                 >
                   <img
@@ -497,14 +498,14 @@
                     alt="Python icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Python
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="php"
                 >
                   <img
@@ -513,23 +514,21 @@
                     alt="PHP icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     PHP
                   </figcaption>
                 </figure>
               </div>
-              <div
-                class="category r3 col1 border-b border-black/30 pb-[0.2rem]"
-                id="devops"
-              >
+              <div class="border-b border-black/30 pb-[0.2rem]" id="devops">
                 <h4>DevOps</h4>
               </div>
               <div
-                class="skills-row r3 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+                id="devops-skills-row"
+                class="grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
               >
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="git"
                 >
                   <img
@@ -538,14 +537,14 @@
                     alt="Git icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Git
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="docker"
                 >
                   <img
@@ -554,14 +553,14 @@
                     alt="Docker icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Docker
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="postman"
                 >
                   <img
@@ -570,14 +569,14 @@
                     alt="Postman icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Postman
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="vercel"
                 >
                   <img
@@ -586,14 +585,14 @@
                     alt="Vercel icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Vercel
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="railway"
                 >
                   <img
@@ -602,14 +601,14 @@
                     alt="Railway icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Railway
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="digitalocean"
                 >
                   <img
@@ -618,23 +617,21 @@
                     alt="DigitalOcean icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     DigitalOcean
                   </figcaption>
                 </figure>
               </div>
-              <div
-                class="category r4 col1 border-b border-black/30 pb-[0.2rem]"
-                id="ux-ui"
-              >
+              <div class="border-b border-black/30 pb-[0.2rem]" id="ux-ui">
                 <h4>UX/UI</h4>
               </div>
               <div
-                class="skills-row r4 col2 grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
+                id="ux-ui-skills-row"
+                class="grid grid-cols-2 gap-[1.3rem] justify-items-center mb-4 md:grid-cols-3 lg:grid-cols-4"
               >
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="adobexd"
                 >
                   <img
@@ -643,14 +640,14 @@
                     alt="Adobe XD icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Adobe XD
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="photoshop"
                 >
                   <img
@@ -659,14 +656,14 @@
                     alt="Photoshop icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Photoshop
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="illustrator"
                 >
                   <img
@@ -675,14 +672,14 @@
                     alt="Illustrator icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     Illustrator
                   </figcaption>
                 </figure>
 
                 <figure
-                  class="skill-icon flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
+                  class="flex flex-col items-center justify-center gap-[0.4rem] aspect-square min-w-[6.25rem] max-w-[8.125rem]"
                   id="wordpress"
                 >
                   <img
@@ -691,7 +688,7 @@
                     alt="WordPress icon"
                   />
                   <figcaption
-                    class="skill-caption text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
+                    class="text-center text-[clamp(0.75rem,2.5vw,0.95rem)]"
                   >
                     WordPress
                   </figcaption>
@@ -701,26 +698,26 @@
           </div>
           <div
             id="work-expirience"
-            class="card-2 skills-exp_card bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] flex flex-col gap-4 lg:col-span-1"
+            class="bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] flex flex-col gap-4 lg:col-span-1"
           >
             <h3 class="text-center p-[clamp(0.5rem,1vw,1rem)]">
               Industry Experience
             </h3>
-            <div class="exp-point flex flex-col gap-1" id="exp-1">
+            <div class="flex flex-col gap-1" id="exp-1">
               <h4>Platform & UI/UX Engineering</h4>
               <p>
                 Contributed to web platform enhancements and UI/UX improvements
                 for an academic institution.
               </p>
             </div>
-            <div class="exp-point flex flex-col gap-1" id="exp-2">
+            <div class="flex flex-col gap-1" id="exp-2">
               <h4>Systems & Database Integration</h4>
               <p>
                 Designed full-stack solutions and RESTful APIs to support
                 scalable business systems and data management.
               </p>
             </div>
-            <div class="exp-point flex flex-col gap-1" id="exp-3">
+            <div class="flex flex-col gap-1" id="exp-3">
               <h4>Internal Tools & Process Automation</h4>
               <p>
                 Enhanced service delivery through process automation and
@@ -730,13 +727,13 @@
           </div>
           <div
             id="credentials"
-            class="card-3 skills-exp_card bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] flex flex-col gap-4 lg:col-span-1"
+            class="bg-brand-card1 rounded-lg p-[clamp(1rem,2vw,2rem)] flex flex-col gap-4 lg:col-span-1"
           >
             <h3 class="text-center p-[clamp(0.5rem,1vw,1rem)]">Credentials</h3>
 
-            <div id="cred-1" class="cred-point flex flex-col gap-1">
+            <div id="cred-1" class="flex flex-col gap-1">
               <span
-                class="status-label in-progress block w-fit text-[0.65rem] font-semibold tracking-[1px] uppercase leading-none mb-1 border rounded px-2 py-1 bg-brand-tan text-brand-brown shadow-[0_2px_6px_rgba(146,129,122,0.15)] border-brand-gray/60"
+                class="block w-fit text-[0.65rem] font-semibold tracking-[1px] uppercase leading-none mb-1 border rounded px-2 py-1 bg-brand-tan text-brand-brown shadow-[0_2px_6px_rgba(146,129,122,0.15)] border-brand-gray/60"
               >
                 In Progress
               </span>
@@ -744,9 +741,9 @@
               <p class="text-brand-gray">Codecademy</p>
             </div>
 
-            <div id="cred-2" class="cred-point flex flex-col gap-1">
+            <div id="cred-2" class="flex flex-col gap-1">
               <span
-                class="status-label winner block w-fit text-[0.65rem] font-semibold tracking-[1px] uppercase leading-none mb-1 border rounded px-2 py-1 bg-brand-brown text-brand-card1 shadow-md border-transparent"
+                class="block w-fit text-[0.65rem] font-semibold tracking-[1px] uppercase leading-none mb-1 border rounded px-2 py-1 bg-brand-brown text-brand-card1 shadow-md border-transparent"
               >
                 Capstone Winner
               </span>
@@ -754,7 +751,7 @@
               <p class="text-brand-gray">Codecademy</p>
             </div>
 
-            <div id="cred-3" class="cred-point flex flex-col gap-1">
+            <div id="cred-3" class="flex flex-col gap-1">
               <h4>B.Sc. in Computer Science</h4>
               <p class="text-brand-gray">University of British Columbia</p>
             </div>
@@ -792,7 +789,7 @@
                 </picture>
               </div>
 
-              <div class="project-info flex flex-col h-full">
+              <div id="project-info-1" class="flex flex-col h-full">
                 <h3 class="my-[clamp(1rem,2vw,1.25rem)]">
                   Eira — Personal Health Companion
                   <span
@@ -815,7 +812,7 @@
                 </p>
 
                 <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
-                <ul id="tech-list-1" class="list-disc pl-6 space-y-1.5">
+                <ul id="tech-list-1" class="list-disc pl-10 my-2 space-y-1.5">
                   <li>Next.js</li>
                   <li>TypeScript</li>
                   <li>Tailwind CSS</li>
@@ -823,8 +820,10 @@
                   <li>Prisma</li>
                   <li>Clerk</li>
                 </ul>
+
                 <div
-                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                  id="project-links-1"
+                  class="mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
                 >
                   <a
                     class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
@@ -863,7 +862,7 @@
                   />
                 </picture>
               </div>
-              <div id="project-info" class="flex flex-col h-full">
+              <div id="project-info-2" class="flex flex-col h-full">
                 <h3 class="my-[clamp(1rem,2vw,1.25rem)]">
                   Personal Portfolio
                   <span
@@ -883,7 +882,7 @@
                   seamless, cross-device experience.
                 </p>
                 <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
-                <ul id="tech-list-2" class="list-disc pl-6 space-y-1.5">
+                <ul id="tech-list-2" class="list-disc pl-10 my-2 space-y-1.5">
                   <li>CSS3</li>
                   <li>HTML5</li>
                   <li>Tailwind CSS</li>
@@ -891,7 +890,8 @@
                 </ul>
 
                 <div
-                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                  id="project-links-2"
+                  class="mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
                 >
                   <a
                     class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
@@ -926,7 +926,7 @@
                   <img
                     src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
                     alt="Coming Soon - Project Placeholder"
-                    class="project-img md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
+                    class="md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
                   />
                 </picture>
               </div>
@@ -948,14 +948,15 @@
                   authentication for seamless user interactions.
                 </p>
                 <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
-                <ul id="tech-list-3" class="list-disc pl-6 space-y-1.5">
+                <ul id="tech-list-3" class="list-disc pl-10 my-2 space-y-1.5">
                   <li>JavaScript</li>
                   <li>Fetch API</li>
                   <li>Async/Await</li>
                   <li>Postman</li>
                 </ul>
                 <div
-                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                  id="project-links-3"
+                  class="mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
                 >
                   <a
                     class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
@@ -990,7 +991,7 @@
                   <img
                     src="https://dummyimage.com/1280x720/cccccc/fff2d7&text=Coming+Soon"
                     alt="Coming Soon - Project Placeholder"
-                    class="project-img md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
+                    class="md:mx-auto lg:w-full lg:aspect-square lg:object-cover rounded-md"
                   />
                 </picture>
               </div>
@@ -1013,15 +1014,15 @@
                   interactive experience.
                 </p>
                 <h4 class="my-[clamp(0.75rem,1.5vw,1.25rem)]">Tech Stack</h4>
-                <ul id="tech-list-4" class="list-disc pl-6 space-y-1.5">
+                <ul id="tech-list-4" class="list-disc pl-10 my-2 space-y-1.5">
                   <li>React</li>
                   <li>React Router</li>
                   <li>Tailwind CSS</li>
                   <li>JavaScript</li>
                 </ul>
-
                 <div
-                  class="project-links mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
+                  id="project-links-4"
+                  class="mt-8 md:mt-auto flex gap-[clamp(0.5rem,2vw,1rem)] justify-end"
                 >
                   <a
                     class="bg-brand-gray text-brand-tan rounded-md px-5 py-2.5 font-semibold text-center transition-all duration-500 hover:bg-brand-brown hover:text-brand-white"
@@ -1049,9 +1050,10 @@
         class="min-h-screen flex flex-col pt-[clamp(2rem,4vw,3rem)] bg-brand-yellow"
       >
         <div
+          id="contact-container"
           class="flex-1 flex items-center w-full max-w-[1440px] mx-auto px-[clamp(2rem,2%,3rem)]"
         >
-          <div class="contact-card p-[clamp(1rem,2vw,1.5rem)]">
+          <div id="contact-content" class="p-[clamp(1rem,2vw,1.5rem)]">
             <h2
               class="text-[clamp(2rem,6vw,4rem)] md:text-[clamp(3rem,6vw,6rem)] leading-[1.1] mb-[clamp(1.5rem,3vw,2rem)] md:mb-[clamp(2.5rem,4vw,3rem)]"
             >
