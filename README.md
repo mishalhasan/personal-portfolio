@@ -56,24 +56,6 @@ A proof-of-concept for scalable frontend architecture and systematic UI developm
 
 ---
 
-### 3. Planned Technical Expansions
-
-This repository will continue evolving as a learning platform for deeper frontend and full-stack exploration:
-
-#### Vanilla JavaScript API Integration
-
-- Asynchronous data handling using the Fetch API
-- Robust error states and UI feedback systems
-- Dynamic DOM rendering patterns
-
-#### React Architecture Exploration
-
-- Custom hooks and lifecycle management
-- Protected routing patterns
-- State architecture and scalability considerations
-
----
-
 ## 💼 Professional Perspective
 
 My experience is presented through a systems-oriented lens rather than a company-by-company listing. I focus on demonstrating transferable technical competencies:
